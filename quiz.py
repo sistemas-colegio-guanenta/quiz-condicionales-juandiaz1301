@@ -5,8 +5,18 @@ print("------------------------------")
 print("----- VERIFICAR TRIANGULO ----")
 print("------------------------------")
 
+
 # input
+a = float(input("Ingrese la longitud del lado a: "))
+b = float(input("Ingrese la longitud del lado b: "))
+c = float(input("Ingrese la longitud del lado c: "))
 
 # processing
+es_triangulo = a + b > c and a + c > b and b + c > a 
 
 # output
+if es_triangulo:
+    print(f"Estas longitudes ({a}, {b}, {c}) pueden formar un triangulo.")
+else:
+    print(f"Estas longitudes ({a}, {b}, {c}) no pueden formar un triangulo.")
+    
